@@ -37,7 +37,7 @@ export default function Home() {
                   mode="single"
                   selected={lastPeriodStart}
                   onSelect={setLastPeriodStart}
-                  className="rounded-md border"
+                  className="rounded-md border w-full"
                 />
               </div>
               <div className="space-y-2">

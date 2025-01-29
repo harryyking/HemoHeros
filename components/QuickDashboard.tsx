@@ -54,7 +54,7 @@ const QuickCheckDashboard: React.FC<QuickCheckDashboardProps> = ({ lastPeriodSta
             mode="single"
             selected={today}
             month={today}
-            className="rounded-md border shadow"
+            className="rounded-md border shadow w-full"
             modifiers={modifiers}
             modifiersStyles={modifiersStyles}
           />

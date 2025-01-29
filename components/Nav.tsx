@@ -3,7 +3,7 @@ import { BookOpen } from 'lucide-react'
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-200 max-w-2xl mx-auto rounded-md">
+    <div className="navbar bg-base-200 max-w-2xl mx-auto rounded-xl">
   <div className="navbar-start">
     <a href="" className='btn btn-ghost'>💉</a>
   </div>

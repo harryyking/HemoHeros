@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-export function Home() {
+export default function Home() {
 
   return(
     <div className="hero bg-base-200 min-h-screen">

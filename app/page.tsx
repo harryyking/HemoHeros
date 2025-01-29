@@ -8,6 +8,8 @@ import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import Image from "next/image"
+import Icon from "@/public/icon.png"
 import QuickCheckDashboard from "@/components/QuickDashboard"
 
 export default function Home() {
@@ -22,7 +24,16 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-8">Menstrual Cycle Tracker</h1>
+      <div className="text-xl font-semibold text-center mb-8 flex gap-4 items-center">
+        <Image
+        width={30}
+        height={30}
+        alt="logo"
+        src={Icon}
+        />
+       <h1>MenstrualMind</h1> 
+       </div>
+
 
       {!showDashboard ? (
         <Card className="max-w-md mx-auto">

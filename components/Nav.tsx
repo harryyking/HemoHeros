@@ -1,8 +1,9 @@
 import React from 'react'
+import { BookOpen } from 'lucide-react'
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-200 max-w-xl mx-auto rounded-md">
+    <div className="navbar bg-base-200 max-w-2xl mx-auto rounded-md">
   <div className="navbar-start">
     <a href="" className='btn btn-ghost'>💉</a>
   </div>
@@ -13,7 +14,7 @@ const Nav = () => {
 
   
   <div className="navbar-end" >  
-    <a className="btn btn-ghost">📕 Learn</a>
+    <a className="btn btn-ghost"><BookOpen className='w-5 h-5'/></a>
 
   </div>
 </div>

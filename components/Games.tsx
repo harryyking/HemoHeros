@@ -2,7 +2,7 @@ import React from 'react'
 
 const Games = () => {
   return (
-    <div>Games</div>
+    <div className='min-h-screen'>Games</div>
   )
 }
 

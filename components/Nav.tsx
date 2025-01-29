@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-100 max-w-md mx-auto rounded-md">
+    <div className="navbar bg-base-100 max-w-md mx-auto rounded-md mt-2">
   <div className="navbar-start tooltip" data-tip="HemoHeros">
     <a href="" className='btn btn-ghost'>💉</a>
   </div>

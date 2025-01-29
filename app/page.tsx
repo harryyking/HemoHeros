@@ -18,8 +18,8 @@ export default function Home() {
         </svg>
 
 
-      <div className="flex flex-col justify-center items-center text-center z-10">
-        <div className="max-w-4xl px-4 mx-auto">
+      <div className="flex flex-col justify-center items-center text-center z-10 max-w-4xl mx-auto">
+        <div className=" px-4 ">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <h1 className="lg:text-6xl text-4xl font-bold text-rose-900 mb-6">
               Track Your Cycle, Embrace Your Wellness

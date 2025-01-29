@@ -18,7 +18,6 @@ export default function RootLayout({
     <html lang="en" >
       <body
       data-theme="dracula"
-      className={brand.className}
       >
         {children}
       </body>

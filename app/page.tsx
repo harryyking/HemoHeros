@@ -21,7 +21,7 @@ export default function Home() {
   }
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 min-h-screen">
       <h1 className="text-3xl font-bold text-center mb-8">Menstrual Cycle Tracker</h1>
 
       {!showDashboard ? (
@@ -29,7 +29,7 @@ export default function Home() {
           <CardHeader>
             <CardTitle>Enter Your Cycle Information</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="p-2 mx-auto w-full">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="lastPeriodStart">Last Period Start Date</Label>

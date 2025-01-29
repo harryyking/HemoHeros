@@ -29,9 +29,9 @@ export default function Home() {
           <CardHeader>
             <CardTitle>Enter Your Cycle Information</CardTitle>
           </CardHeader>
-          <CardContent className="p-2 mx-auto w-full">
+          <CardContent className="mx-auto w-full">
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-2">
+              <div className="space-y-2 w-full">
                 <Label htmlFor="lastPeriodStart">Last Period Start Date</Label>
                 <Calendar
                   mode="single"

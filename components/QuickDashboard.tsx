@@ -63,8 +63,8 @@ const QuickCheckDashboard: React.FC<QuickCheckDashboardProps> = ({ lastPeriodSta
       <p className="text-center mb-8">Your personalized menstrual cycle overview</p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <Card className="col-span-1 lg:col-span-2 shadow-md">
-          <CardContent className="p-2 mx-auto w-full">
+        <Card className="col-span-1 lg:col-span-2 shadow-md w-full">
+          <CardContent className="p-0 mx-auto w-full">
             <Calendar
               mode="single"
               selected={today}

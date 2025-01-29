@@ -47,7 +47,7 @@ const QuickCheckDashboard: React.FC<QuickCheckDashboardProps> = ({ lastPeriodSta
   }
 
   const InfoCard: React.FC<{ title: string; value: string; color: string }> = ({ title, value, color }) => (
-    <Card className="bg-white shadow-md">
+    <Card className="shadow-md border">
       <CardContent className="p-4">
         <h3 className="text-sm font-medium text-gray-500 mb-1">{title}</h3>
         <p className="text-2xl font-bold" style={{ color }}>
@@ -88,7 +88,7 @@ const QuickCheckDashboard: React.FC<QuickCheckDashboardProps> = ({ lastPeriodSta
         </div>
       </div>
 
-      <div className="mt-8 bg-white p-4 rounded-lg shadow-md">
+      <div className="mt-8 bg-white p-4 rounded-lg shadow-md border">
         <h2 className="text-xl font-semibold mb-4 text-purple-800">Cycle Phase Legend</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {[

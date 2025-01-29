@@ -24,14 +24,14 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-4 min-h-screen">
-      <div className="text-xl font-semibold text-center mb-8 flex gap-4 items-center">
+      <div className=" mb-8 flex gap-2 items-center justify-center">
         <Image
-        width={30}
-        height={30}
+        width={40}
+        height={40}
         alt="logo"
         src={Icon}
         />
-       <h1>MenstrualMind</h1> 
+       <h1 className="text-lg font-semibold">menstrualmind</h1> 
        </div>
 
 

@@ -4,7 +4,7 @@ import { Droplet } from 'lucide-react';
 
 const BloodTypeInfo = () => {
   return (
-    <div className="card bg-base-100 shadow-xl w-full max-w-4xl">
+    <div className="card bg-base-100 shadow-xl w-full max-w-4xl mx-auto">
       <div className="card-body space-y-8">
         {/* Blood Groups */}
         <section>

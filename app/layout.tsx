@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-      data-theme="dracula"
+      data-theme="emerald"
       className={brand.className}
       >
         {children}

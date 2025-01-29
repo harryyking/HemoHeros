@@ -2,15 +2,22 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import Image from "next/image"
 import { motion } from "framer-motion"
-import Cycle from '@/public/cycle.svg'
-import Background from "@/public/background.svg"
+
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-rose-100 to-rose-200 flex items-center justify-center overflow-hidden">
-      <Image src={Background} alt="Background Pattern" fill className="object-cover opacity-10" />
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" className="object-cover opacity-10">
+          <defs>
+            <pattern id="pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+              <circle cx="20" cy="20" r="1" fill="#fda4af" opacity="0.3" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#pattern)" />
+        </svg>
+
+
       <div className="hero-content text-center z-10">
         <div className="max-w-4xl px-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -36,7 +43,15 @@ export default function Home() {
         </div>
       </div>
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-        <Image src={Cycle} alt="Cycle Illustration" width={600} height={300} className="opacity-80" />
+      <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" className="opacity-80">
+  <circle cx="300" cy="150" r="120" fill="none" stroke="#fda4af" stroke-width="4" />
+  <circle cx="300" cy="150" r="100" fill="none" stroke="#f43f5e" stroke-width="4" stroke-dasharray="628,628" stroke-dashoffset="157" />
+  <circle cx="300" cy="30" r="20" fill="#e11d48" />
+  <circle cx="300" cy="270" r="20" fill="#be123c" />
+  <circle cx="180" cy="150" r="20" fill="#9f1239" />
+  <circle cx="420" cy="150" r="20" fill="#881337" />
+</svg>
+
       </div>
     </div>
   )

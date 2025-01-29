@@ -3,30 +3,20 @@ import Nav from './Nav'
 
 const Hero = () => {
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen p-4'>
 
     <Nav/>
-    <div className="relative overflow-hidden py-16 sm:py-24">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
-        <div className="max-w-md mx-auto lg:max-w-none lg:mx-0">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-          Become a Blood & Genotype Expert in Minutes!
-          </h1>
-          <p className="mt-6 text-xl text-gray-500">
-          Engage with exciting challenges, match blood types, and explore genotypes in a way you've never experienced before.
-          </p>
-          <div className="mt-8">
-            {/* CTA */}
-
-          </div>
-        </div>
-        <div className="mt-12 lg:mt-0">
-        {/* Interaction */}
-        </div>
-      </div>
+    <div className="hero bg-base-200 min-h-screen">
+  <div className="hero-content text-center">
+    <div className="max-w-md">
+      <h1 className="text-5xl font-bold">Become a Blood & Genotype Expert in Minutes!</h1>
+      <p className="py-6">
+      Engage with exciting challenges, match blood types, and explore genotypes in a way you've never experienced before.
+      </p>
+      <button className="btn btn-primary">Play Game</button>
     </div>
   </div>
+</div>
     </div>
   )
 }

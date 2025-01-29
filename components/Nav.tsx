@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-200 max-w-lg mx-auto rounded-md py-4">
+    <div className="navbar bg-base-200 max-w-lg mx-auto rounded-md">
   <div className="navbar-start">
     <a href="" className='btn btn-ghost'>💉</a>
   </div>

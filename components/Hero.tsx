@@ -6,7 +6,7 @@ const Hero = () => {
     <div className='min-h-screen'>
 
     <Nav/>
-    <div className="relative overflow-hidden bg-blue-50 py-16 sm:py-24">
+    <div className="relative overflow-hidden py-16 sm:py-24">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
         <div className="max-w-md mx-auto lg:max-w-none lg:mx-0">

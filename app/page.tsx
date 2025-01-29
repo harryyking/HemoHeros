@@ -2,7 +2,6 @@ import Developer from "@/components/Developer";
 import Footer from "@/components/Footer";
 import Games from "@/components/Games";
 import Hero from "@/components/Hero";
-import Nav from "@/components/Nav";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
 
@@ -12,11 +11,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <div className="min-h-screen">
-        <Nav/>
+        
       <Hero/>
-      </div>
-
       <Games/>
       <Testimonials/>
       <Developer/>

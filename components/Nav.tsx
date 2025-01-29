@@ -14,7 +14,7 @@ const Nav = () => {
 
   
   <div className="navbar-end" >  
-    <a className="btn btn-ghost"><BookOpen className='w-5 h-5'/></a>
+    <a href="/learn" className="btn btn-ghost"><BookOpen className='w-5 h-5'/></a>
 
   </div>
 </div>

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {Inter} from 'next/font/google'
 
-const brand = Inter({weight: ["100", "200", "300", "400", "500"], subsets: ["latin"]})
+const brand = Inter({weight: ["100", "200", "300", "400"], subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "HemoHeros",

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Inter} from 'next/font/google'
+import {Roboto} from 'next/font/google'
 
-const brand = Inter({weight: ["400","500","600","700"], subsets: ["latin"]})
+const brand = Roboto({weight: ["100","400", "500", "700"], subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "HemoHeros",

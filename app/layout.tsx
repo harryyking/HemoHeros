@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import {Inter} from 'next/font/google'
+import {Gabarito} from 'next/font/google'
 
-const brand = Inter({weight: ["100", "200", "300", "400"], subsets: ["latin"]})
+const brand = Gabarito({weight: ["400","600", "700"], subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "HemoHeros",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body
-      data-theme="emerald"
+      data-theme="light"
       className={brand.className}
       >
         {children}

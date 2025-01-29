@@ -2,7 +2,7 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div className="navbar bg-base-100 max-w-md mx-auto rounded-md mt-2">
+    <div className="navbar bg-base-100 max-w-md mx-auto rounded-md py-4">
   <div className="navbar-start tooltip" data-tip="HemoHeros">
     <a href="" className='btn btn-ghost'>💉</a>
   </div>
@@ -12,10 +12,8 @@ const Nav = () => {
   </div>
 
   
-  <div className="navbar-end">
-    <div className='tooltip' data-tip="Learn">
+  <div className="navbar-end tooltip" data-tip="Learn">  
     <a className="btn">📕</a>
-    </div>
 
   </div>
 </div>

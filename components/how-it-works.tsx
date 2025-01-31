@@ -15,7 +15,7 @@ const ProcessStep = ({ icon, number, title, description, details }: any) => (
   <Card className="relative h-full">
     <CardContent className="pt-6">
       <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold">
+        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold">
           {number}
         </div>
       </div>
@@ -115,12 +115,8 @@ export default function HowItWorks() {
 
         <div className="text-center">
           <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 py-6 text-lg group"
-          >
-            <Calendar className="w-5 h-5 mr-2" />
+            size="lg" >
             Schedule Your Free Consultation
-            <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>
       </div>

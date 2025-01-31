@@ -38,13 +38,13 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col items-center py-24 sm:py-32 text-center">
-      <div className="w-full max-w-2xl">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div className="join join-vertical w-full">
+      <div className="w-full max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+        
           {faqs.map((faq, index) => (
-            <div key={index} className="collapse collapse-plus bg-gray-200 join-item border border-gray-300">
+            <div key={index} className="collapse collapse-plus bg-gray-200 join-item border border-gray-300 space-y-2">
               <input
-                type="checkbox"
+                type="radio"
                 checked={openIndex === index}
                 onChange={() => toggleAccordion(index)}
               />
@@ -54,7 +54,6 @@ export default function FAQ() {
               </div>
             </div>
           ))}
-        </div>
       </div>
     </div>
   );

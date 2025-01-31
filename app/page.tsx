@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import HowItWorks from "@/components/how-it-works"
-import Problem from "@/components/Problem"
+import VideoSalesSection from "@/components/Problem"
 import Services from "@/components/Services"
 import TrustSection from "@/components/Trust-section"
 
@@ -16,7 +16,7 @@ export default function Home() {
       <main>
         {/* Main content */}
       <Hero/>
-      <Problem/>
+      <VideoSalesSection/>
       <Services/>
       <TrustSection/>
       <HowItWorks/>

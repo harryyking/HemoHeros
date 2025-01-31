@@ -1,36 +1,19 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { SparklesCore } from "@/components/ui/sparkles"
 
 export default function Hero() {
   return (
-    <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[40rem] w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <p className="border rounded-xl p-2 border-blue-200 bg-blue-100">Get Set Up in Days, Not Months. Let’s Build Your Digital Backend!</p>
       <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20">
-        Build wonderful
+        Transform your Business with smart automation & analytics
       </h1>
-      <div className="w-[40rem] h-40 relative">
-        {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-        {/* Core component */}
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-
-        {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-      </div>
       <div className="flex flex-col items-center justify-center mt-4 text-white">
-        <p className="text-xl text-center mb-4">Create stunning websites with our powerful tools</p>
-        <Button size="lg" className="bg-white text-black hover:bg-gray-200">Get Started</Button>
+        <p className="text-xl text-center mb-4">Launch, Automate, and Grow <br /> 
+        Get a branded website, custom automation workflows, and real-time business analytics tailored to your needs. Streamline operations, 
+        boost efficiency, and scale effortlessly.</p>
+
+      <Button size="lg" className="bg-blue-500 text-white">Book A Call</Button>
       </div>
     </div>
   )

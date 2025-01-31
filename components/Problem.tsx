@@ -55,7 +55,7 @@ export default function VideoSalesSection() {
             "Professional websites that attract clients",
             "Real-time business analytics insights",
           ].map((item, index) => (
-            <div key={index} className="flex items-start space-x-2 text-gray-900">
+            <div key={index} className="flex items-start space-x-2">
               <Play className="text-green-500 mt-1" size={20} />
               <p>{item}</p>
             </div>

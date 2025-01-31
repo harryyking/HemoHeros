@@ -80,7 +80,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="text-3xl font-bold mb-4 block hover:text-green-500 transition-colors">
-              YourBrand
+              Another Step
             </Link>
             <p className="text-gray-400 mb-6">
               Empowering innovation through cutting-edge technology and creative solutions.
@@ -126,22 +126,7 @@ export function Footer() {
             </div>
           ))}
 
-          {/* Contact Section */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-white/10 pb-2">
-              Contact
-            </h3>
-            <ul className="space-y-3">
-              <li className="flex items-center text-gray-400">
-                <MapPinIcon className="mr-2 text-green-500" size={18} />
-                123 Tech Lane, Innovation City
-              </li>
-              <li className="flex items-center text-gray-400">
-                <MailIcon className="mr-2 text-green-500" size={18} />
-                support@yourbrand.com
-              </li>
-            </ul>
-          </div>
+
         </div>
 
         {/* Footer Bottom */}

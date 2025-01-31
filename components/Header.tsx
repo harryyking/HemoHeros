@@ -23,7 +23,7 @@ const MobileNav = () => (
 
 const Header = () => {
   return (
-    <header className="w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="w-full">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between h-16 px-4">
           {/* Logo */}

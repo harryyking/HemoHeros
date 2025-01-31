@@ -114,7 +114,7 @@ const filteredStudies = caseStudies.filter(study => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Our Success Stories
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">
+          <p className="text-xl md:text-2xl font-muted-background max-w-2xl">
             Discover how we've helped businesses like yours achieve exceptional results through innovative digital solutions.
           </p>
         </div>
@@ -205,7 +205,7 @@ const filteredStudies = caseStudies.filter(study => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-black text-white py-16">
+      <section className=" py-16">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Be Our Next Success Story?

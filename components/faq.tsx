@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
 
-const faqs = [
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+const faqs: FAQItem[] = [
   {
     question: "What is included in the free trial?",
     answer:
@@ -38,14 +43,15 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col items-center py-24 sm:py-32 text-center">
-      <div className="w-full max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-        
+      <div className="w-full max-w-2xl">
+        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+        <div className="join join-vertical w-full">
           {faqs.map((faq, index) => (
-            <div key={index} className="collapse collapse-plus bg-gray-200 join-item border border-gray-300 space-y-2">
+            <div key={index} className="collapse collapse-plus bg-base-200 join-item border border-base-300">
               <input
-                type="radio"
-                name="my-accordion-3"
+                type="checkbox"
+                checked={openIndex === index}
+                onChange={() => toggleAccordion(index)}
               />
               <div className="collapse-title text-lg font-medium">{faq.question}</div>
               <div className="collapse-content">
@@ -53,6 +59,7 @@ export default function FAQ() {
               </div>
             </div>
           ))}
+        </div>
       </div>
     </div>
   );

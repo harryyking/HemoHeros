@@ -20,7 +20,7 @@ export default function VideoSalesSection() {
           Watch a quick demo of how we solve your biggest business challenges
         </p>
         
-        <div className="relative aspect-video bg-black rounded-lg overflow-hidden shadow-lg mb-8">
+        <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg mb-8 border">
           {!isVideoPlaying ? (
             <>
               <div 
@@ -33,7 +33,7 @@ export default function VideoSalesSection() {
                 onClick={handleVideoPlay}
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-40 transition-all"
               >
-                <div className="bg-white p-4 rounded-full shadow-lg">
+                <div className="border border-white p-4 rounded-full shadow-lg">
                   <Play className="text-green-500" size={48} />
                 </div>
               </button>
@@ -55,7 +55,7 @@ export default function VideoSalesSection() {
             "Professional websites that attract clients",
             "Real-time business analytics insights",
           ].map((item, index) => (
-            <div key={index} className="flex items-start space-x-2 text-gray-700">
+            <div key={index} className="flex items-start space-x-2 text-gray-900">
               <Play className="text-green-500 mt-1" size={20} />
               <p>{item}</p>
             </div>

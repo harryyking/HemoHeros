@@ -26,7 +26,9 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -43,21 +45,17 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "forwards");
       } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
+        containerRef.current.style.setProperty("--animation-direction", "reverse");
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -69,28 +67,28 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-primary-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl border-2 border-green-600/20 flex-shrink-0 px-8 py-6 md:w-[450px] group hover:border-green-500/30 transition-colors duration-300"
             style={{
-              background:
-                "linear-gradient(180deg, var(--primary-800), var(--primary-900)",
+              background: "linear-gradient(180deg, hsl(142, 72.9%, 10.2%), hsl(142, 71.4%, 8.1%))",
             }}
             key={item.name}
           >
@@ -99,20 +97,28 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                {item.quote}
-              </span>
-              <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
-                  </span>
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span>
+              <div className="relative z-20 space-y-6">
+                <span className="block text-sm leading-[1.6] text-gray-100 font-normal">
+                  {item.quote}
                 </span>
+                <div className="flex flex-row items-center gap-4 border-t border-green-600/20 pt-4">
+                  <div className="h-10 w-10 rounded-full bg-green-600/10 flex items-center justify-center">
+                    <span className="text-lg font-semibold text-green-500">
+                      {item.name.charAt(0)}
+                    </span>
+                  </div>
+                  <span className="flex flex-col gap-1">
+                    <span className="text-sm font-medium text-gray-100">
+                      {item.name}
+                    </span>
+                    <span className="text-sm text-green-500/80">
+                      {item.title}
+                    </span>
+                  </span>
+                </div>
               </div>
             </blockquote>
+            <div className="absolute inset-0 rounded-2xl bg-green-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </li>
         ))}
       </ul>

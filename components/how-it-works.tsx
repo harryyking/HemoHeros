@@ -15,7 +15,7 @@ const ProcessStep = ({ icon, number, title, description, details }: any) => (
   <Card className="relative h-full">
     <CardContent className="pt-6">
       <div className="absolute -top-6 left-1/2 -translate-x-1/2">
-        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold">
+        <div className="w-12 h-12 rounded-full bg-primary flex items-center text-black justify-center font-bold">
           {number}
         </div>
       </div>

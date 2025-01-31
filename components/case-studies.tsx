@@ -39,45 +39,45 @@ type Stat = {
 const caseStudies = [
   {
     id: 1,
-    title: "E-commerce Revenue Growth",
-    client: "Fashion Retailer",
+    title: "Kiosk - Online Shop Builder",
+    client: "The Riri Shop",
     category: "E-commerce",
     image: "/api/placeholder/600/400",
     stats: {
       revenue: "+127%",
       conversion: "2.4x",
-      timeframe: "6 months"
+      timeframe: "2 months"
     },
     tags: ["Digital Marketing", "UX Design", "SEO"],
-    description: "Transformed an underperforming online store into a conversion powerhouse through strategic UX improvements and targeted marketing campaigns."
+    description: "Built a robust system for online store creation for any ecommerce brand in Ghana."
   },
   {
     id: 2,
-    title: "B2B Lead Generation",
-    client: "SaaS Platform",
-    category: "SaaS",
+    title: "Rental Listings Platform",
+    client: "Renters in Ghana",
+    category: "Real Estate",
     image: "/api/placeholder/600/400",
     stats: {
       leads: "+235%",
       cost: "-40%",
       timeframe: "3 months"
     },
-    tags: ["Lead Generation", "Content Marketing", "Marketing Automation"],
-    description: "Implemented an automated lead generation system that dramatically increased qualified leads while reducing acquisition costs."
+    tags: ["Marketplace", "Real Estate", "Marketing Automation"],
+    description: "Built a mordern rental listings platform for the Ghanaian rental marketplace."
   },
   {
     id: 3,
-    title: "Brand Transformation",
-    client: "Local Restaurant Chain",
-    category: "Food & Beverage",
+    title: "Global Inclusion Nextwork International",
+    client: "GINI",
+    category: "NGOs",
     image: "/api/placeholder/600/400",
     stats: {
       engagement: "+187%",
       footfall: "+82%",
-      timeframe: "4 months"
+      timeframe: "2 weeks"
     },
     tags: ["Branding", "Social Media", "Local SEO"],
-    description: "Revitalized a traditional restaurant chain's brand identity and digital presence, resulting in significant increase in customer engagement and foot traffic."
+    description: "Built a professional website for a team on a mission to empower children with disability."
   }
 ]
 
@@ -172,7 +172,7 @@ const filteredStudies = caseStudies.filter(study => {
                   <p className="text-gray-600 mb-4">{study.description}</p>
                   
                   {/* Key Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-4 bg-gray-50 p-4 rounded-lg">
+                  <div className="grid grid-cols-3 gap-4 mb-4 bg-base-50 p-4 rounded-lg">
                     {Object.entries(study.stats).map(([key, value]) => (
                       <div key={key} className="text-center">
                         <div className="text-xl font-bold text-green-600">{value}</div>

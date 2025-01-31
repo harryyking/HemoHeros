@@ -12,9 +12,6 @@ const MobileNav = () => (
     <a className="text-lg font-medium hover:text-primary transition-colors" href="/case-studies">
       Case Studies
     </a>
-    <a className="text-lg font-medium hover:text-primary transition-colors" href="/templates">
-      Templates
-    </a>
     <Button className="w-full" size="lg">
       Book A Call
     </Button>
@@ -39,12 +36,6 @@ const Header = () => {
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 Case Studies
-              </a>
-              <a 
-                href="/templates" 
-                className="text-sm font-medium hover:text-primary transition-colors"
-              >
-                Templates
               </a>
             </div>
             <Button>Book A Call</Button>

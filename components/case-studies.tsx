@@ -109,8 +109,7 @@ const filteredStudies = caseStudies.filter(study => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20" />
+      <section className="py-24 relative overflow-hidden border-b">
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Our Success Stories
@@ -156,14 +155,14 @@ const filteredStudies = caseStudies.filter(study => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredStudies.map((study) => (
-              <div key={study.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={study.id} className="border rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative">
                   <img
                     src={study.image}
                     alt={study.title}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 right-4 border border-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-4 right-4 border border-white bg-black text-white px-3 py-1 rounded-full text-sm">
                     {study.category}
                   </div>
                 </div>

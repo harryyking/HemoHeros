@@ -25,7 +25,7 @@ const Header = () => {
         <nav className="flex items-center justify-between h-16 px-4">
           {/* Logo */}
           <a href="/" className="text-xl font-semibold">
-            Another Step
+            another<span className='text-primary'>Step</span>
           </a>
 
           {/* Desktop Navigation */}

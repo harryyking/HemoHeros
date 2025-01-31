@@ -111,7 +111,7 @@ const filteredStudies = caseStudies.filter(study => {
       {/* Hero Section */}
       <section className="py-24 relative overflow-hidden border-b">
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
             Our Success Stories
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
@@ -172,7 +172,7 @@ const filteredStudies = caseStudies.filter(study => {
                   <p className="text-gray-600 mb-4">{study.description}</p>
                   
                   {/* Key Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-4 bg-base-100 p-4 rounded-lg">
+                  <div className="grid grid-cols-3 gap-4 mb-4 bg-gray-100 p-4 rounded-lg">
                     {Object.entries(study.stats).map(([key, value]) => (
                       <div key={key} className="text-center">
                         <div className="text-xl font-bold text-green-600">{value}</div>
@@ -210,10 +210,10 @@ const filteredStudies = caseStudies.filter(study => {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Be Our Next Success Story?
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help your business achieve exceptional results.
           </p>
-          <Button size="lg" className="bg-white text-black hover:bg-gray-100">
+          <Button size="lg">
             Schedule a Free Strategy Call
           </Button>
         </div>

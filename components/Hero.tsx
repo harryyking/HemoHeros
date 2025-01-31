@@ -11,7 +11,6 @@ export default function Hero() {
       Launch, Automate, and Grow <br />
        Get a branded website, custom automation workflows, 
       and real-time business analytics tailored to your needs.
-       Streamline operations, boost efficiency, and scale effortlessly.
       </p>
       <Button size={"lg"}>Book A Call</Button>
     </div>

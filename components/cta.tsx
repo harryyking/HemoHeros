@@ -2,17 +2,17 @@ import { Button } from "@/components/ui/button"
 
 export default function CTA() {
   return (
-    <div className="py-24 sm:py-32">
+    <div className="py-24 sm:py-32 rounded bg-primary shadow-md px-2">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
             Are you ready to take your business further?
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 font-muted-background">
+          <p className="mx-auto mt-6 max-w-xl text-lg text-white leading-8 font-muted-background">
             Claim Your Free Consultation
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <Button size="lg">
+            <Button size="lg" variant={"secondary"}>
               Book a Call
             </Button>
           </div>

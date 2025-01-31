@@ -114,7 +114,7 @@ const filteredStudies = caseStudies.filter(study => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Our Success Stories
           </h1>
-          <p className="text-xl md:text-2xl font-muted-background max-w-2xl">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
             Discover how we've helped businesses like yours achieve exceptional results through innovative digital solutions.
           </p>
         </div>

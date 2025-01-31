@@ -86,6 +86,9 @@ const config: Config = {
   	}
   },
   plugins: [addVariablesForColors, require("daisyui")],
+  daisyui: {
+	themes: ['black']
+  }
 };
 export default config;
 

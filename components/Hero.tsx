@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="hero min-h-screen">
   <div className="hero-content text-center">
     <div className="max-w-4xl">
-      <h1 className="text-5xl font-bold">Transform your business with Smart Automation & Analytics</h1>
+      <h1 className="lg:text-5xl text-3xl font-bold">Transform your business with Smart Automation & Analytics</h1>
       <p className="py-6">
       Launch, Automate, and Grow <br />
        Get a branded website, custom automation workflows, 

@@ -107,9 +107,9 @@ const filteredStudies = caseStudies.filter(study => {
 });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-black text-white py-24 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-900/20 to-blue-900/20" />
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -122,7 +122,7 @@ const filteredStudies = caseStudies.filter(study => {
       </section>
 
       {/* Filters Section */}
-      <section className="py-8 bg-white border-b">
+      <section className="py-8 border-b">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex gap-2 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
@@ -163,7 +163,7 @@ const filteredStudies = caseStudies.filter(study => {
                     alt={study.title}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-black text-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-4 right-4 border border-white px-3 py-1 rounded-full text-sm">
                     {study.category}
                   </div>
                 </div>

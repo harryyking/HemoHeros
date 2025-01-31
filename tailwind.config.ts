@@ -85,7 +85,7 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, require("daisyui")],
 };
 export default config;
 

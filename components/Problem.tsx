@@ -11,7 +11,7 @@ export default function VideoSalesSection() {
   };
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="py-12">
       <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-3xl font-bold mb-6 text-center">
           See How We Transform Your Business

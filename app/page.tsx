@@ -13,7 +13,7 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       {/* Your other components */}
       <Header/>
-      <main className="flex-grow">
+      <main>
         {/* Main content */}
       <Hero/>
       <Problem/>

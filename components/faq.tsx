@@ -1,12 +1,6 @@
-"use client";
-import { useState } from "react";
 
-interface FAQItem {
-  question: string;
-  answer: string;
-}
 
-const faqs: FAQItem[] = [
+const faqs = [
   {
     question: "What is included in the free trial?",
     answer:
@@ -35,23 +29,18 @@ const faqs: FAQItem[] = [
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleAccordion = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <div className="flex flex-col items-center py-24 sm:py-32 text-center">
-      <div className="w-full max-w-2xl">
-        <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-        <div className="join join-vertical w-full">
+      <div className="w-full max-w-3xl">
+        <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+        <div className="w-full">
           {faqs.map((faq, index) => (
-            <div key={index} className="collapse collapse-plus bg-base-200 join-item border border-base-300">
+            <div key={index} className="collapse collapse-plus bg-base-200 border">
               <input
-                type="checkbox"
-                checked={openIndex === index}
-                onChange={() => toggleAccordion(index)}
+                type="radio"
+                name="my-accordion-3"
+                
               />
               <div className="collapse-title text-lg font-medium">{faq.question}</div>
               <div className="collapse-content">

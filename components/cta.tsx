@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <div className="relative overflow-hidden">
       {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-green-600 to-emerald-600 opacity-90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-green-800 to-emerald-500 opacity-90" />
       
       <div className="relative mx-auto max-w-5xl p-8 md:p-12">
         {/* Main Content */}

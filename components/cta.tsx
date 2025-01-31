@@ -13,10 +13,6 @@ export default function CTA() {
           <h2 className="text-3xl md:text-5xl font-bold text-white">
             Ready to Transform Your Business?
           </h2>
-          
-          <p className="text-xl md:text-2xl text-white/90">
-            Book Your Free Strategy Session Worth ₵500
-          </p>
 
           {/* Feature Badges */}
           <div className="flex flex-wrap justify-center gap-4 my-8">
@@ -54,9 +50,9 @@ export default function CTA() {
           {/* What You'll Get */}
           <div className="mt-8 grid md:grid-cols-3 gap-4 text-left">
             {[
-              "Custom Growth Strategy for Your Business",
-              "ROI & Timeline Projection",
-              "Step-by-Step Implementation Plan"
+              "Brand Website",
+              "Custom workflows & automation",
+              "Analytical Tools"
             ].map((benefit, index) => (
               <div 
                 key={index}

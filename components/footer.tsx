@@ -11,7 +11,6 @@ import {
   MapPinIcon,
   MailIcon
 } from "lucide-react"
-import { BackgroundBeams } from "./ui/backgorund-beams"
 
 const footerLinks = [
   {
@@ -73,8 +72,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative py-20 overflow-hidden">
-      <BackgroundBeams />
+    <footer className="py-20 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           {/* Brand Section */}
@@ -82,7 +80,7 @@ export function Footer() {
             <Link href="/" className="text-3xl font-bold mb-4 block hover:text-green-500 transition-colors">
               another<span className="text-primary">Step</span>
             </Link>
-            <p className="text-gray-400 mb-6">
+            <p className="text-muted-foreground mb-6">
               Empowering innovation through cutting-edge technology and creative solutions.
             </p>
             
@@ -132,7 +130,7 @@ export function Footer() {
         {/* Footer Bottom */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} YourBrand. All rights reserved.
+            © {new Date().getFullYear()} anotherStep. All rights reserved.
           </p>
           
           {/* Social Links */}

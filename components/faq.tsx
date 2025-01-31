@@ -42,7 +42,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="flex flex-col items-center py-24 sm:py-32 bg-black">
+    <div className="flex flex-col items-center py-24 sm:py-32">
       <div className="w-full max-w-2xl">
         <h2 className="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
         <div className="space-y-4 w-full">

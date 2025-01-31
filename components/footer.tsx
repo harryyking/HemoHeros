@@ -73,7 +73,7 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative py-20 bg-black text-white overflow-hidden">
+    <footer className="relative py-20 overflow-hidden">
       <BackgroundBeams />
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">

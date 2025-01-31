@@ -80,7 +80,7 @@ export function Footer() {
           {/* Brand Section */}
           <div className="col-span-2 lg:col-span-1">
             <Link href="/" className="text-3xl font-bold mb-4 block hover:text-green-500 transition-colors">
-              Another Step
+              another<span className="text-primary">Step</span>
             </Link>
             <p className="text-gray-400 mb-6">
               Empowering innovation through cutting-edge technology and creative solutions.

@@ -42,12 +42,12 @@ export default function FAQ() {
   };
 
   return (
-    <div className="flex flex-col items-center py-24 sm:py-32 text-center">
+    <div className="flex flex-col items-center py-24 sm:py-32 bg-black">
       <div className="w-full max-w-2xl">
         <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-        <div className="join join-vertical w-full">
+        <div className="space-y-2 w-full">
           {faqs.map((faq, index) => (
-            <div key={index} className="collapse collapse-plus bg-base-200 join-item border border-base-300">
+            <div key={index} className="collapse collapse-plus bg-base-100 join-item border border-base-200">
               <input
                 type="checkbox"
                 checked={openIndex === index}

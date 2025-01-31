@@ -5,10 +5,10 @@ import { InfiniteMovingCards } from "./ui/inifinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div className="space-y-6">
-      <h2 className="text-center font-semibold ">What Do Our Customers Say</h2>
+    <div className="space-y-2">
+      <h2 className="text-center font-semibold text-2xl ">What Do Our Customers Say</h2>
 
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[30rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

@@ -45,8 +45,7 @@ export default function FAQ() {
             <div key={index} className="collapse collapse-plus bg-gray-200 join-item border border-gray-300 space-y-2">
               <input
                 type="radio"
-                checked={openIndex === index}
-                onChange={() => toggleAccordion(index)}
+                name="my-accordion-3"
               />
               <div className="collapse-title text-lg font-medium">{faq.question}</div>
               <div className="collapse-content">

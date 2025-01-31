@@ -63,7 +63,7 @@ const caseStudies = [
       timeframe: "3 months"
     },
     tags: ["Marketplace", "Real Estate", "Marketing Automation"],
-    description: "Built a mordern rental listings platform for the Ghanaian rental marketplace."
+    description: "Built a modern rental listings platform for the Ghanaian rental marketplace."
   },
   {
     id: 3,
@@ -172,7 +172,7 @@ const filteredStudies = caseStudies.filter(study => {
                   <p className="text-gray-600 mb-4">{study.description}</p>
                   
                   {/* Key Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-4 bg-base-50 p-4 rounded-lg">
+                  <div className="grid grid-cols-3 gap-4 mb-4 bg-base-100 p-4 rounded-lg">
                     {Object.entries(study.stats).map(([key, value]) => (
                       <div key={key} className="text-center">
                         <div className="text-xl font-bold text-green-600">{value}</div>

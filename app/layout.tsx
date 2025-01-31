@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Gabarito} from 'next/font/google'
+import Header from "@/components/Header";
 
 const brand = Gabarito({weight: ["400","600", "700"], subsets: ["latin"]})
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       data-theme={"black"}
       className={brand.className}
       >
+        <Header/>
         {children}
       </body>
     </html>

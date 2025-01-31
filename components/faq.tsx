@@ -47,7 +47,7 @@ export default function FAQ() {
         <h2 className="text-2xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
         <div className="space-y-4 w-full">
           {faqs.map((faq, index) => (
-            <div key={index} className="collapse collapse-plus bg-base-50 join-item border border-base-100">
+            <div key={index} className="collapse collapse-plus bg-base-200 join-item border border-base-300">
               <input
                 type="checkbox"
                 checked={openIndex === index}

@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Hero() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white flex justify-center items-center">
-      <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-6 justify-between">
+      <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center gap-8 justify-between">
         <div className="text-center lg:text-left lg:max-w-[50%] mb-8 lg:mb-0">
           <h1 className="text-3xl lg:text-5xl font-bold text-green-800 mb-6">
             Your Technical Partner
@@ -20,7 +20,7 @@ export default function Hero() {
             </Button>
           </Link>
         </div>
-        <div className="hidden lg:block lg:w-full">
+        <div className="hidden lg:block lg:w-[50%]">
           <Image
             src="https://utfs.io/f/Bilqtug6OUkPI6EM7h5tlwPKMk2gQWBGDXoyHV7Ap0nSc9dZ"
             alt="Business Automation and Analytics"

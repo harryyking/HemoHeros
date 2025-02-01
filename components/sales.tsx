@@ -20,15 +20,32 @@ export default function BookingSection() {
   const [phone, setPhone] = useState("")
   const [message, setMessage] = useState("")
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
-    // Here you would typically send this data to a backend or use a form submission service
-    console.log({ name, email, phone, message })
-    // Reset form after submission
-    setName("")
-    setEmail("")
-    setPhone("")
-    setMessage("")
+
+    const formData = { name, email, phone, message }
+
+    try {
+      const response = await fetch('/api/post/', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        // Reset form fields on successful submission
+        setName("")
+        setEmail("")
+        setPhone("")
+        setMessage("")
+      } else {
+        console.error("Form submission failed")
+      }
+    } catch (error) {
+      console.error("Error submitting form", error)
+    }
   }
 
   return (

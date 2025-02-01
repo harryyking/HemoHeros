@@ -125,8 +125,8 @@ const filteredStudies = caseStudies.filter(study => {
           <Image 
           src="https://utfs.io/f/Bilqtug6OUkPEPwNatOCIDWBNeqZUyTK951RAP72txLYXzdh"
           alt="success logo"
-          width={200}
-          height={200}
+          width={400}
+          height={400}
           />
         </div>
       </section>

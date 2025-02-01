@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="hidden lg:block lg:w-[45%]">
           <Image
-            src="/https://utfs.io/f/Bilqtug6OUkPFn4OY5lS54E1zmK6tAd0ZRnIYDwpX2yvhrVP"
+            src="https://utfs.io/f/Bilqtug6OUkPFn4OY5lS54E1zmK6tAd0ZRnIYDwpX2yvhrVP"
             alt="Business Automation and Analytics"
             width={400}
             height={400}

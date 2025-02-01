@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -47,6 +47,17 @@ export default function BookingSection() {
       console.error("Error submitting form", error)
     }
   }
+
+    useEffect(() => {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+  
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []);
 
   return (
     <section className="py-20 bg-gray-50">
@@ -130,6 +141,13 @@ export default function BookingSection() {
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
+
+                <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/arthurharry06/30min?primary_color=03d434"
+            style={{ minWidth: "320px", height: "700px" }}
+          />
+
 
             <div className="mt-4 flex items-center justify-center text-sm text-gray-600">
               <Calendar className="mr-2" size={16} />

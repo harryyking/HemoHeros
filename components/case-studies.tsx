@@ -121,12 +121,12 @@ const filteredStudies = caseStudies.filter(study => {
           </p>
         </div>
 
-        <div className="lg:block hidden">
+        <div className="lg:block hidden w-72 h-72">
           <Image 
           src="https://utfs.io/f/Bilqtug6OUkPEPwNatOCIDWBNeqZUyTK951RAP72txLYXzdh"
           alt="success logo"
-          width={400}
-          height={400}
+          width={300}
+          height={300}
           />
         </div>
       </section>

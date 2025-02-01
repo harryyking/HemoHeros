@@ -7,7 +7,6 @@ import HowItWorks from "@/components/how-it-works"
 import VideoSalesSection from "@/components/Problem"
 import Services from "@/components/Services"
 import { InfiniteMovingCardsDemo } from "@/components/Testimonials"
-import TrustSection from "@/components/Trust-section"
 
 export default function Home() {
   return (

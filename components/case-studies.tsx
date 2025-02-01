@@ -224,9 +224,11 @@ const filteredStudies = caseStudies.filter(study => {
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help your business achieve exceptional results.
           </p>
+          <Link href="/book">
           <Button size="lg">
             Schedule a Free Strategy Call
           </Button>
+          </Link>
         </div>
       </section>
     </div>

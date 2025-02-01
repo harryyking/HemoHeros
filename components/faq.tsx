@@ -8,29 +8,29 @@ interface FAQItem {
 
 const faqs = [
   {
-    question: "What is included in the free trial?",
+    question: "What services does your agency provide?",
     answer:
-      "Our free trial includes full access to all features for 14 days. You can create projects, invite team members, and explore all the tools we offer.",
+      "We specialize in custom software development, web and mobile app development, UI/UX design, cloud solutions, and software maintenance. We also offer consulting services to help businesses optimize their digital presence",
   },
   {
-    question: "How does billing work?",
+    question: "What industries do you serve?",
     answer:
-      "We offer monthly and annual billing options. You can choose the plan that works best for you. Annual plans come with a discount.",
+      "We work with a wide range of industries, including healthcare, e-commerce, fintech, real estate, education, and logistics. Our team adapts to industry-specific needs to deliver tailored software solutions.",
   },
   {
-    question: "Can I change my plan later?",
+    question: "How do I get started with your agency?",
     answer:
-      "Yes, you can upgrade, downgrade, or cancel your plan at any time. Changes will be reflected in your next billing cycle.",
+      "You can start by booking a free consultation with our team. We’ll discuss your project requirements, goals, and budget, and provide recommendations on the best approach.",
   },
   {
-    question: "Is there a limit to how many projects I can create?",
+    question: "How much does custom software development cost?",
     answer:
-      "The number of projects you can create depends on your plan. Our Enterprise plan offers unlimited projects.",
+      "The cost depends on factors like project scope, complexity, technology stack, and timeline. We provide a detailed quote after understanding your requirements.",
   },
   {
-    question: "Do you offer discounts for non-profits or educational institutions?",
+    question: "Do you require an upfront payment?",
     answer:
-      "Yes, we offer special pricing for non-profits and educational institutions. Please contact our sales team for more information.",
+      "Yes, we typically require an initial deposit before starting the project. The remaining payments are structured in milestones.",
   },
 ];
 

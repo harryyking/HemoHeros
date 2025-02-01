@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between">
         <div className="text-center lg:text-left lg:max-w-[50%] mb-8 lg:mb-0">
           <h1 className="text-3xl lg:text-5xl font-bold text-green-800 mb-6">
-            Transform your business with Smart Automation & Analytics
+            Your Technical Partner
           </h1>
           <p className="text-lg text-green-700 mb-8">
             Launch, Automate, and Grow <br />
@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="hidden lg:block lg:w-[45%]">
           <Image
-            src="/placeholder.svg?height=400&width=400"
+            src="/https://utfs.io/f/Bilqtug6OUkPFn4OY5lS54E1zmK6tAd0ZRnIYDwpX2yvhrVP"
             alt="Business Automation and Analytics"
             width={400}
             height={400}

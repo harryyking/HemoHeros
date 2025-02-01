@@ -1,6 +1,9 @@
-
+"use client"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
 import { 
   CheckCircle, 
   XCircle, 
@@ -52,6 +55,19 @@ const PastResults = [
 ]
 
 export default function SalesSection() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    // Here you would typically send this data to a backend or use a form submission service
+    console.log({ name, email, phone, message });
+    // Reset form after submission
+    setName(''); setEmail(''); setPhone(''); setMessage('');
+  }
+
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       {/* Main Headline */}
@@ -182,23 +198,70 @@ export default function SalesSection() {
           </div>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section with Form */}
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-black text-white p-8 rounded-2xl">
+          <div className="bg-green-500 text-white p-8 rounded-2xl">
             <h3 className="text-2xl font-bold mb-4">
               Limited Time Offer - Only 3 Spots Available!
             </h3>
             <p className="text-gray-300 mb-6">
               Book your free consultation now to secure your spot and start growing your business!
             </p>
-            <Button 
-              size="lg"
-              className="bg-white text-black hover:bg-gray-100 group"
-            >
-              Book Your Free Strategy Call
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <div className="mt-4 flex items-center justify-center text-sm text-gray-400">
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="grid gap-2">
+                <Label htmlFor="name">Name</Label>
+                <Input 
+                  id="name" 
+                  placeholder="Your Name" 
+                  value={name} 
+                  onChange={(e) => setName(e.target.value)} 
+                  className="bg-white text-gray-900"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="email">Email</Label>
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="Your Email" 
+                  value={email} 
+                  onChange={(e) => setEmail(e.target.value)} 
+                  className="bg-white text-gray-900"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="phone">Phone</Label>
+                <Input 
+                  id="phone" 
+                  type="tel" 
+                  placeholder="Your Phone Number" 
+                  value={phone} 
+                  onChange={(e) => setPhone(e.target.value)} 
+                  className="bg-white text-gray-900"
+                />
+              </div>
+              <div className="grid gap-2">
+                <Label htmlFor="message">Message</Label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Tell us about your business..." 
+                  value={message} 
+                  onChange={(e) => setMessage(e.target.value)} 
+                  className="bg-white text-gray-900"
+                />
+              </div>
+              <Button 
+                type="submit"
+                size="lg"
+                className="bg-white text-green-600 hover:bg-green-100 group"
+              >
+                Book Your Free Strategy Call
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </form>
+
+            <div className="mt-4 flex items-center justify-center text-sm text-gray-300">
               <MessageCircle className="mr-2" size={16} />
               Usually responds within 24 hours
             </div>

@@ -10,7 +10,6 @@ import {
   DollarSign,
   ExternalLink
 } from "lucide-react"
-import Image from "next/image"
 
 
 // Define types for better type checking
@@ -111,7 +110,7 @@ const filteredStudies = caseStudies.filter(study => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-24 relative overflow-hidden border-b flex items-center justify between max-w-7xl">
+      <section className="py-24 relative overflow-hidden border-b">
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary">
             Our Success Stories
@@ -119,15 +118,6 @@ const filteredStudies = caseStudies.filter(study => {
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
             Discover how we've helped businesses like yours achieve exceptional results through innovative digital solutions.
           </p>
-        </div>
-
-        <div className="lg:block hidden w-72 h-72">
-          <Image 
-          src="https://utfs.io/f/Bilqtug6OUkPEPwNatOCIDWBNeqZUyTK951RAP72txLYXzdh"
-          alt="success logo"
-          width={300}
-          height={300}
-          />
         </div>
       </section>
 

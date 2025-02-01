@@ -1,10 +1,5 @@
-"use client"
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
 import { CheckCircle, Calendar, ArrowRight, MessageCircle } from "lucide-react"
+import CalendlyWidget from "./calendly"
 
 const benefits = [
   "Custom Automated Business Website",
@@ -15,49 +10,6 @@ const benefits = [
 ]
 
 export default function BookingSection() {
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [phone, setPhone] = useState("")
-  const [message, setMessage] = useState("")
-
-  const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault()
-
-    const formData = { name, email, phone, message }
-
-    try {
-      const response = await fetch('api/post/', {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-
-      if (response.ok) {
-        // Reset form fields on successful submission
-        setName("")
-        setEmail("")
-        setPhone("")
-        setMessage("")
-      } else {
-        console.error("Form submission failed")
-      }
-    } catch (error) {
-      console.error("Error submitting form", error)
-    }
-  }
-
-    useEffect(() => {
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.body.appendChild(script);
-  
-      return () => {
-        document.body.removeChild(script);
-      };
-    }, []);
 
   return (
     <section className="py-20 bg-gray-50">
@@ -94,59 +46,7 @@ export default function BookingSection() {
 
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-2xl font-bold mb-6">Schedule Your Free Consultation</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid gap-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  placeholder="Your Name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="phone">Phone</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="Your Phone Number"
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="message">Message (Optional)</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell us about your business..."
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-              </div>
-              <Button type="submit" size="lg" className="w-full">
-                Book Your Free Strategy Call
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </form>
-
-                <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/arthurharry06/30min?primary_color=03d434"
-            style={{ minWidth: "320px", height: "700px" }}
-          />
+            <CalendlyWidget/>
 
 
             <div className="mt-4 flex items-center justify-center text-sm text-gray-600">

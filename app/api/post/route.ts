@@ -15,11 +15,13 @@ export async function POST(request: Request) {
     });
 
     if (error) {
+      console.error("Error sending message", error)
       return new Response(JSON.stringify({ error }), { status: 500 });
     }
 
     return new Response(JSON.stringify(data), { status: 200 });
   } catch (error) {
+    console.error("Error sending post", error)
     return new Response(JSON.stringify({ error: error }), { status: 500 });
   }
 }

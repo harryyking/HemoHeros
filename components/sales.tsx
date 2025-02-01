@@ -32,10 +32,10 @@ export default function BookingSection() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-primary">
             Book Your Free Strategy Call
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
@@ -108,7 +108,7 @@ export default function BookingSection() {
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full bg-blue-600 text-white hover:bg-blue-700 group">
+              <Button type="submit" size="lg">
                 Book Your Free Strategy Call
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

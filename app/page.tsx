@@ -1,6 +1,6 @@
 import CTA from "@/components/cta"
 import FAQ from "@/components/faq"
-import { Footer } from "@/components/footer"
+import Footer from "@/components/footer"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import HowItWorks from "@/components/how-it-works"

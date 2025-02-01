@@ -199,13 +199,14 @@ const filteredStudies = caseStudies.filter(study => {
                       
                     ))}
 
+                  </div>
+                  
                     <Link href={study.website} target="_blank" rel="noopener noreferrer">
                     <Button className="w-full group">
                       View Case Study
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
                     </Button>
                     </Link>
-                  </div>
                   
                 </div>
               </div>

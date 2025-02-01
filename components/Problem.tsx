@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Play } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"
 
 export default function VideoSalesSection() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -63,12 +64,14 @@ export default function VideoSalesSection() {
         </div>
 
         <div className="text-center">
+          <Link href="/book">
           <Button 
             size="lg" 
             className="bg-green-500 hover:bg-green-600 text-white"
           >
             Schedule Your Free Strategy Call
           </Button>
+          </Link>
         </div>
       </div>
     </section>

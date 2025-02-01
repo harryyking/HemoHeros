@@ -6,15 +6,19 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu, X } from "lucide-react";
+import Link from 'next/link';
 
 const MobileNav = () => (
   <div className="flex flex-col gap-6 p-4">
-    <a className="text-lg font-medium hover:text-primary transition-colors" href="/case-studies">
+    <Link className="text-lg font-medium hover:text-primary transition-colors" href="/case-studies">
       Case Studies
-    </a>
+    </Link>
+
+  <Link href="/book">
     <Button className="w-full" size="lg">
       Book A Call
     </Button>
+  </Link>
   </div>
 );
 
@@ -31,14 +35,19 @@ const Header = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-6">
-              <a 
+              <Link 
                 href="/case-studies" 
                 className="text-sm font-medium hover:text-primary transition-colors"
               >
                 Case Studies
-              </a>
+              </Link>
             </div>
-            <Button>Book A Call</Button>
+
+            <Link href="/book">
+            <Button  size="lg">
+              Book A Call
+            </Button>
+          </Link>
           </div>
 
           {/* Mobile Menu Button */}

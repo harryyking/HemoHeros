@@ -10,6 +10,7 @@ import {
   Check,
   Calendar
 } from "lucide-react";
+import Link from 'next/link';
 
 const ProcessStep = ({ icon, number, title, description, details }: any) => (
   <Card className="relative h-full">
@@ -114,10 +115,12 @@ export default function HowItWorks() {
         </div>
 
         <div className="text-center">
+          <Link href="/book">
           <Button 
             size="lg" >
             Schedule Your Free Consultation
           </Button>
+          </Link>
         </div>
       </div>
     </section>

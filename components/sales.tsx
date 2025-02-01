@@ -36,7 +36,7 @@ export default function BookingSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-primary">
-            Book Your Free Strategy Call
+            Book Your Free Call
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
             Discover How We Can Boost Your Business Growth

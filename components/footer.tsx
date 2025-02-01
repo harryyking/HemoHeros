@@ -33,38 +33,8 @@ const Footer = () => {
             </ul>
           </div>
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-green-800">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/services/web-development" className="hover:text-green-600 transition-colors">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/automation" className="hover:text-green-600 transition-colors">
-                  Business Automation
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/analytics" className="hover:text-green-600 transition-colors">
-                  Analytics Dashboard
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/seo" className="hover:text-green-600 transition-colors">
-                  SEO Optimization
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="space-y-4">
             <h3 className="text-lg font-semibold text-green-800">Resources</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/blog" className="hover:text-green-600 transition-colors">
-                  Blog
-                </Link>
-              </li>
               <li>
                 <Link href="/case-studies" className="hover:text-green-600 transition-colors">
                   Case Studies
@@ -123,21 +93,10 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm">Stay updated with our latest news and offers!</p>
-            <Button variant="outline" className="bg-green-600 text-white hover:bg-green-700 hover:text-white">
-              Subscribe to Newsletter
-            </Button>
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-green-200 text-center">
-          <p className="text-sm">&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
-          <div className="mt-2 space-x-4">
-            <Link href="/privacy-policy" className="text-sm hover:text-green-600 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-of-service" className="text-sm hover:text-green-600 transition-colors">
-              Terms of Service
-            </Link>
-          </div>
+          <p className="text-sm">&copy; {new Date().getFullYear()} anotherStep. All rights reserved.</p>
         </div>
       </div>
     </footer>

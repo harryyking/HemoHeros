@@ -32,7 +32,7 @@ export default function BookingSection() {
   }
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-primary">
@@ -108,7 +108,7 @@ export default function BookingSection() {
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
-              <Button type="submit" size="lg">
+              <Button type="submit" size="lg" className="w-full">
                 Book Your Free Strategy Call
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>

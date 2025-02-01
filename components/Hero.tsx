@@ -20,13 +20,12 @@ export default function Hero() {
             </Button>
           </Link>
         </div>
-        <div className="hidden lg:block lg:w-[50%]">
+        <div className="hidden lg:block lg:w-full">
           <Image
             src="https://utfs.io/f/Bilqtug6OUkPEPwNatOCIDWBNeqZUyTK951RAP72txLYXzdh"
             alt="Business Automation and Analytics"
             width={500}
             height={500}
-            className="rounded-lg shadow-xl"
           />
         </div>
       </div>

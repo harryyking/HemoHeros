@@ -18,7 +18,7 @@ export default function CalendlyWidget() {
       <div
         className="calendly-inline-widget"
         data-url="https://calendly.com/arthurharry06/30min?primary_color=03d434"
-        style={{ width: "100%", height: "700px", overflow: "hidden" }}
+        style={{ width: "100%", height: "700px", overflowY: "auto" }}
       />
     </div>
   );

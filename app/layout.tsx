@@ -6,8 +6,8 @@ import Header from "@/components/Header";
 const brand = Gabarito({weight: ["400","600", "700"], subsets: ["latin"]})
 
 export const metadata: Metadata = {
-  title: "HemoHeros",
-  description: "Become a Blood & Genotype Expert in Minutes!",
+  title: "anotherStep",
+  description: "We create custom software solutions for your business.",
 };
 
 export default function RootLayout({

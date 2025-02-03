@@ -44,7 +44,7 @@ export default function BookingSection() {
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden">
             <h2 className="text-2xl font-bold mb-6">Schedule Your Free Consultation</h2>
             <CalendlyWidget/>
 

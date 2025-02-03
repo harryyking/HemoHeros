@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight, Clock, Shield } from "lucide-react"
+import Link from "next/link"
+
 
 export default function CTA() {
   return (
@@ -33,6 +35,8 @@ export default function CTA() {
 
           {/* CTA Button */}
           <div className="flex flex-col items-center space-y-4">
+            <Link href="/book">
+            
             <Button 
               size="lg" 
               variant="secondary"
@@ -42,6 +46,7 @@ export default function CTA() {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
+            </Link>
             <p className="text-white/80 text-sm">
               Limited to 3 Spots This Week | No Credit Card Required
             </p>
